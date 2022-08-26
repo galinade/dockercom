@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  postgresql:
+    image: postgresql:12
+    ports:
+      - '9999:9999'
+    volumes:
+      - .data:/var/lib/postgresql
+    environment:
+      - POSTGRESQL_PASSWORD=0a5db51cefc1734964d707587d3d3eff735cf91b5375fa03f0f4c8d8f4e7f192
